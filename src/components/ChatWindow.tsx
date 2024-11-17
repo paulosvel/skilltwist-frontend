@@ -14,7 +14,7 @@ const ChatWindow = ({ messages, onSendMessage }) => {
     return (
         <div className="chat-window">
             <div className="messages">
-                {messages.map((msg, index) => (
+                {messages?.map((msg, index) => (
                     <div key={index} className={msg.isUser ? 'message user' : 'message'}>
                         {msg.text}
                     </div>
